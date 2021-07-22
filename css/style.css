@@ -1,0 +1,181 @@
+/* General stylings for webpage */
+a,
+a:focus,
+a:hover,{
+  text-decoration: none;
+  color: #111;
+}
+html, body{
+  height: 100%;
+  overflow: auto;
+}
+
+body{
+  text-align: center;
+  font-size: 16px;
+}
+
+/* End of genereal styles */
+
+/* Additional styling ofr sight wrapper */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 200%; /* For at least Firefox */
+  min-height: 100%;
+  background-color: grey;
+  /* -webkit-box-shadow: inset 0 0 100px rgba(0, 0, 0, .5);
+  box-shadow: inset 0 0 100px rgba(0, 0, 0, .5); */
+}
+
+/* Contact button for masthead (NOT A BUTTON YET) */
+.contact{
+  list-style-type: none;
+  float: right;
+  display: inline-block;
+  box-sizing: border-box;
+  background-color: white;
+  padding: 10px;
+  margin-top: 15px;
+  margin-right: 50px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.contact-inner{
+  color: black;
+}
+/* End of contact button */
+
+/* masthead for webpage */
+.masthead{
+  width: 100%;
+  position: absolute;
+  background-color: grey;
+  border: 1px solid transparent;
+  left: 0;
+}
+
+.masthead-brand{
+  width: 100px;
+  position: relative;
+  margin-left:auto;
+  margin-right: auto;
+}
+  /* Logo with name for masthead */
+.logo{
+  color: black;
+  border: 1px solid transparent;
+}
+/* end of logo and masthead */
+
+/* Container to make content below masthead */
+.container{
+  margin-top: 180px;
+}
+
+/* Border to see area of splash page that I'm working with */
+.splash-cover{
+  border: 1px solid transparent;
+  height: 800px;
+  padding-left: 30px;
+}
+
+/* Circular photo for headshot image */
+.photo-circle{
+  border: 1px solid transparent;
+  width: 250px;
+  height: 250px;
+  margin-left: 30px;
+  margin-top: 30px;
+  float: left;
+
+}
+
+.img-circle{
+  border: 1px solid transparent;
+  height: 250px;
+  width: 250px;
+}
+/* End of headshot image */
+
+/* Text on splash page */
+.intro{
+  border: 1px solid transparent;
+  width: 600px;
+  float: left;
+  margin-top: 50px;
+  color: white;
+  text-align: left;
+}
+
+.intro-text1{
+  font-size: 4em;
+  padding-left: 20px;
+}
+.intro-text2{
+  font-size: 2em;
+  padding-left: 20px;
+  margin-bottom: -20px;
+  font-style: oblique;
+}
+.intro-text3{
+  font-size: 1.7em;
+  padding-left: 20px;
+  margin-top: -10px;
+}
+.intro-description{
+  padding: 50px;
+  clear: both;
+  margin-left: 100px;
+  margin-right: 100px;
+  font-size: 1.4em;
+  text-align: justify;
+}
+
+/* Grid with list of skills */
+.skill-list{
+  border:1px solid transparent;
+  height: 200px;
+  margin-left: auto;
+}
+.skill-head{
+  font-size: 2em;
+  float: left;
+  margin-top: 70px;
+  margin-left: 300px;
+}
+.skills{
+  width:500px;
+  margin-left: 350px;
+  font-size: 1.4em;
+  border: 1px solid transparent;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  grid-auto-rows: 40px;
+}
+/* End of Splash page content */
+
+.portfolio-content{
+  width: 100vw;
+  height: 2000px;
+  background-color: white;
+  margin-left: 0px !important;
+}
+.heading{
+  margin-bottom: 100px;
+}
+.content-box{
+  border:1px solid;
+  width: 300px;
+  height: 300px;
+  margin: auto;
+}
+
+.content-description{
+  line-height: 300px;
+  text-align: center;
+  margin: auto;
+}

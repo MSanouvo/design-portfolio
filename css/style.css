@@ -50,7 +50,7 @@ body{
 /* masthead for webpage */
 .masthead{
   width: 100%;
-  position: absolute;
+  position: relative;
   background-color: grey;
   border: 1px solid transparent;
   left: 0;
@@ -71,7 +71,7 @@ body{
 
 /* Container to make content below masthead */
 .container{
-  margin-top: 180px;
+  margin-top: 80px;
 }
 
 /* Border to see area of splash page that I'm working with */
@@ -158,24 +158,66 @@ body{
 }
 /* End of Splash page content */
 
-.portfolio-content{
-  width: 100vw;
-  height: 2000px;
+#section2{
+  height:1000px;
   background-color: white;
-  margin-left: 0px !important;
+}
+.portfolio-content{
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 .heading{
-  margin-bottom: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
-.content-box{
-  border:1px solid;
-  width: 300px;
-  height: 300px;
+
+
+
+#section3{
+  height:600px;
   margin: auto;
 }
 
-.content-description{
-  line-height: 300px;
-  text-align: center;
-  margin: auto;
+/* CSS for project images w/ hover effect */
+
+.img-wrap{
+  position: relative;
 }
+.img-thumbnail{
+  width: 90%;
+}
+.description-layer{
+  margin: auto;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.5);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  transition: opacity. .2s, visibility.2;
+}
+
+.img-wrap:hover .description-layer{
+  visibility: visible;
+  opacity: 1;
+}
+
+.project-description{
+  transition: .2s;
+  transform: translateY(1em);
+  color: black;
+}
+
+.img-wrap:hover .project-description{
+  transform: translateY(0);
+}
+/* End of project image effect */

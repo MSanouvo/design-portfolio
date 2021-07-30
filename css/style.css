@@ -159,7 +159,7 @@ body{
 /* End of Splash page content */
 
 #section2{
-  height:1000px;
+  height:100vh;
   background-color: white;
 }
 .portfolio-content{
@@ -175,52 +175,11 @@ body{
 
 
 #section3{
-  height:600px;
+  height:100vh;
   margin: auto;
 }
 
-/* CSS for project images w/ hover effect */
 
-.img-wrap{
-  position: relative;
-}
-.img-thumbnail{
-  width: 90%;
-}
-.description-layer{
-  margin: auto;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(255, 255, 255, 0.5);
-  color: #fff;
-  visibility: hidden;
-  opacity: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-transform: uppercase;
-  transition: opacity. .2s, visibility.2;
-}
-
-.img-wrap:hover .description-layer{
-  visibility: visible;
-  opacity: 1;
-}
-
-.project-description{
-  transition: .2s;
-  transform: translateY(1em);
-  color: black;
-}
-
-.img-wrap:hover .project-description{
-  transform: translateY(0);
-}
-/* End of project image effect */
 
 /* For extra small media (iphone x) !No bootstrap compatability */
 @media (max-width: 415px)  {
@@ -234,7 +193,7 @@ body{
     width:
   }
   .intro-description{
-    padding: 30px 10px 0px 10px
+    padding: 40px 10px 0px 10px
   }
 }
 /* For smaller media (xs bootstrap) */
@@ -255,6 +214,7 @@ body{
   /* Shift margins to fit smaller page */
   #intro-section{
     margin-top: 30px;
+    height: 90vh;
   }
   .contact{
     margin-right: 0px;
@@ -273,7 +233,7 @@ body{
   .skill-head{
     margin-left: 45%;
     margin-bottom: 20px;
-    margin-top: 10px;
+    margin-top: 40px;
     font-size: 1.8em;
   }
   .skills{
@@ -283,7 +243,7 @@ body{
   }
   .intro{
     width: 45%;
-    margin-top: 20px;
+    margin-top: 10px;
   }
   /* Shift sizing of some div containers and items */
   .photo-circle{
@@ -294,6 +254,86 @@ body{
     height: 120px;
     width: 120px;
   }
+/* End of adjusting intro to mobile format */
+/* Adjust contents section for mobile format */
+  .portfolio-content{
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .heading{
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .heading > h1{
+    font-size: 1.8em;
+  }
+  #section2{
+    height: max(100vh, 900px);
+  }
+  .img-wrap{
+    position: relative;
+    margin-bottom: 10px;
+    padding: 50px 0 0 0;
+  }
+  .img-thumbnail{
+    width: 60%;
+  }
+  .project-description{
+    font-size: 24px;
+  }
+  .description-layer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: black;
+  }
 
+}
+@media (min-width: 768px) and (max-width: 991px) {
 
+}
+@media (min-width: 992px) {
+  /* CSS for project images w/ hover effect */
+
+  .img-wrap{
+    position: relative;
+  }
+  .img-thumbnail{
+    width: 90%;
+  }
+  .description-layer{
+    margin: auto;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.5);
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    transition: opacity. .2s, visibility.2;
+  }
+
+  .img-wrap:hover .description-layer{
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .project-description{
+    transition: .2s;
+    transform: translateY(1em);
+    color: black;
+  }
+
+  .img-wrap:hover .project-description{
+    transform: translateY(0);
+  }
+  /* End of project image effect */
 }

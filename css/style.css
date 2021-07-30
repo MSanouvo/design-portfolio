@@ -70,7 +70,7 @@ body{
 /* end of logo and masthead */
 
 /* Container to make content below masthead */
-.container{
+#intro-section{
   margin-top: 80px;
 }
 
@@ -109,17 +109,17 @@ body{
   text-align: left;
 }
 
-.intro-text1{
+#intro-text1{
   font-size: 4em;
   padding-left: 20px;
 }
-.intro-text2{
+#intro-text2{
   font-size: 2em;
   padding-left: 20px;
   margin-bottom: -20px;
   font-style: oblique;
 }
-.intro-text3{
+#intro-text3{
   font-size: 1.7em;
   padding-left: 20px;
   margin-top: -10px;
@@ -221,3 +221,79 @@ body{
   transform: translateY(0);
 }
 /* End of project image effect */
+
+/* For extra small media (iphone x) !No bootstrap compatability */
+@media (max-width: 415px)  {
+  #intro-text1{
+    font-size: 3.5em;
+  }
+  #intro-text3{
+    font-size: 1.4em;
+  }
+  .intro{
+    width:
+  }
+  .intro-description{
+    padding: 30px 10px 0px 10px
+  }
+}
+/* For smaller media (xs bootstrap) */
+@media (max-width: 767px) {
+  /* Bring down font in the intro sections */
+  .intro,
+  .intro-description,
+  .skill-list{
+    font-size: 12px;
+  }
+  .intro{
+    font-size: .5em;
+  }
+  .logo{
+    font-size: 28px;
+  }
+
+  /* Shift margins to fit smaller page */
+  #intro-section{
+    margin-top: 30px;
+  }
+  .contact{
+    margin-right: 0px;
+  }
+  .intro-description{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: .9em;
+  }
+  .splash-cover{
+    margin-left: 10%;
+    padding-left: 0px;
+    margin-right: 10%;
+  }
+  .skill-head{
+    margin-left: 45%;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-size: 1.8em;
+  }
+  .skills{
+    margin-left: 0;
+    width:90%;
+    font-size: 1.2em;
+  }
+  .intro{
+    width: 45%;
+    margin-top: 20px;
+  }
+  /* Shift sizing of some div containers and items */
+  .photo-circle{
+    height: 120px;
+    width: 120px;
+  }
+  .img-circle{
+    height: 120px;
+    width: 120px;
+  }
+
+
+}

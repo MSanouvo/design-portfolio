@@ -288,6 +288,18 @@ body{
     right: 0;
     color: black;
   }
+/* Content for project pages */
+  .project-box{
+    border: 1px solid;
+    margin: 30px 10% 0 10%;
+    padding: 10px;
+  }
+  .project-step{
+    border: 1px solid;
+    margin-bottom: 20px;
+  }
+
+
 
 }
 @media (min-width: 768px) and (max-width: 991px) {
